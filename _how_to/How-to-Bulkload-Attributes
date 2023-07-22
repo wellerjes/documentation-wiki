@@ -1,0 +1,59 @@
+---
+title: How To Bulkload Attributes
+layout: default_toc
+author: Jessica Weller
+date: 2023-07-22
+---
+
+# How to Bulkload Attributes
+
+This document will walk through the steps for bulkloading attributes using the <a href="https://arctos.database.museum/loaders/BulkloadAttributes.cfm" target="_blank">Attribute: Bulkload</a> tool.
+
+### Navigation: Tools Directory > Records > Attribute: Bulkload
+
+### Create and Upload the Attribute Bulkload CSV
+Use the <a href+https://arctos.database.museum/loaders/BulkloadAttributes.cfm?action=makeTemplate" target="_blank>Get a template" hyperlink to download the part bulkloader spreadsheet (.csv).
+
+* Populate the spreadsheet fields following the conventions outline by the Definitions and Documention, which indicate which fields are required.
+
+* Formatting is very important. Make sure you are typing data into the spreadsheet exactly as it appears in the catalog record in Arctos.
+
+* When the template is complete, save the file as a .CSV
+
+* Upload the file using the upload button on the [Attribute Bulkloader](https://arctos.database.museum/loaders/BulkloadAttributes.cfm).
+
+![](https://raw.githubusercontent.com/ArctosDB/documentation-wiki/gh-pages/tutorial_images/Bear%20Pro.jpg) **Pro Tip**
+
+* For details aobut what should be included in each field of the Attribute Bulkload, see the Definitions and Documentation section of the [Attribute Bulkloader](https://arctos.database.museum/loaders/BulkloadAttributes.cfm?action=ld) and follow the links for each column header for more information.
+
+* For advice on formatting when using Excel, see [How To Manage Excel for Arctos](https://handbook.arctosdb.org/how_to/How-to-Excel-for-Arctos.html)
+
+### Review and Load
+
+* Once your spreadsheet formatting has completed validation, click on the "Review and Load" link to see your recors in the bulkloader.
+
+* If you enter "autoload" in the status column of your .CSV, the records should begin to load automatically.
+
+* To manually upload your records, select "Review all records for this user" next to your Arctos username, then select "check all and change status to 'autoload'" and "Change status for checked records".
+
+* Return to "Review and Load" to monitor the progress. Any errors with your attribute data will be returned in the 'Status' column.
+
+### Loading Errors
+
+* If you receive an error message that your data is invalid, check that your spreadsheet column heads are correct that that Excel didn't reformatted the dates.
+
+* Common errors include missing data (required fields) or catalog records that are not found. To correct these errors, select "Get .CSV for this user/status" next to your Arctos username, which will download a file with the errors. Delete the invalid records using "Delete for this user/status." Use the downloaded .CSV to make corrections, then repeat the above process to upload the corrected data.
+
+### Other Useful Information
+
+* Attributes will be immediately added to catalog records. However, they may not appear in your catalog records for up to 24 hours.
+
+* If edits are required after the attributes are uploaded, see "How To Create and Edit Attributes"
+
+## How to Bulkload Attributes Tutorial Video
+
+Need video tutorial
+
+## Edit this Documentation
+
+If you see something that needs to be edited in this document, you can create an issue using the link under the search widget at the top left side of this page, or you can edit directly <a href="https://github.com/ArctosDB/documentation-wiki/edit/gh-pages/_how_to/How-to-Create-and-Edit-Attributes.markdown" target="_blank">here</a>.
